@@ -21,9 +21,9 @@ type RNDevMenuModule = {
 
 const DevMenu: RNDevMenuModule = {
   addItem(name, handler) {
-    if (!__DEV__) {
-      return Promise.resolve();
-    }
+    // if (!__DEV__) {
+    //   return Promise.resolve();
+    // }
 
     handlers.set(name, handler);
     return RNDevMenu.addItem(name);
